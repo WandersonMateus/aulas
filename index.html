@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="src/style.css">
+<title>Em andamento</title>
+</head>
+<body>
+
+
+
+
+
+<div class="conteiner">
+
+    <div class="box">
+
+        <h2>Insira o código de verificação</h2>
+        <input type="password" id="senha" placeholder="165156161...">
+        <br>
+        <button onclick="verificarSenha()">Verificar...</button>
+
+    </div>
+    
+</div class="conteiner">
+
+
+
+<script>
+function verificarSenha() {
+    var senhaInserida = document.getElementById("senha").value;
+    var senhaCorreta = "1031982004";
+
+    if (senhaInserida === senhaCorreta) {
+        window.location.href = "./local/excel-bs.html";
+    } else {
+        alert("Código incorreta. Tente novamente.");
+    }
+}
+</script>
+
+</body>
+</html>
